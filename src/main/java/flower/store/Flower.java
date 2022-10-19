@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 
-
 @Setter
 public class Flower {
     @Getter
@@ -19,8 +18,12 @@ public class Flower {
         this.price = price;
     }
 
+    public double getPrice() {
+        return this.price;
+    }
+
     public String getColor() {
-        return color.toString();
+        return this.color.toString();
     }
 
     public void setColor(FlowerColor color) {

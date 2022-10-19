@@ -13,6 +13,9 @@ public class Store {
     }
 
     public List<FlowerBucket> search(FlowerType flower) {
-        return buckets.stream().filter(bucket -> bucket.hasFlower(flower)).collect(Collectors.toList());
+        return buckets
+                .stream()
+                .filter(bucket -> bucket.hasFlower(flower))
+                .collect(Collectors.toList());
     }
 }
