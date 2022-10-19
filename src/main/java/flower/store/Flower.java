@@ -14,8 +14,8 @@ public class Flower {
     @Getter
     private FlowerType flowerType;
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setPrice(double flowerPrice) {
+        this.price = flowerPrice;
     }
 
     public double getPrice() {
@@ -26,7 +26,7 @@ public class Flower {
         return this.color.toString();
     }
 
-    public void setColor(FlowerColor color) {
-        this.color = color;
+    public void setColor(FlowerColor flowerColor) {
+        this.color = flowerColor;
     }
 }
